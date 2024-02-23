@@ -1,0 +1,25 @@
+---
+# Configuration
+---
+
+To fully use HyperAFK you will need to configure the script. Below is an example config and below that is a table explaining what each option does.
+
+```lua
+Config = {}
+
+Config.AFK_Time = 500 -- Time in seconds
+Config.WarningMessageEnabled = true -- Enable warning messages
+Config.NotifyScript = "ox_lb" -- Notification Script okokNotify, mythic_notify, pNotify
+Config.WarningMessage = "You are about to be kicked for AFK" -- Warning message to be displayed before player is kicked.
+Config.AFK_Kick_Message = "You have been kicked for being AFK." -- Kick message when baing AFK'd
+Config.adminAce = "group.admin" -- The ace group to override the AFK timer
+```
+
+| Name        | Description |   Type |
+| :------------ | :---------: | ----------: |
+| AFK_TIME      |    The time in second until a player is kicked.    | `Int` |
+| WarningMessageEnabled |    Enables the warning message     |    `true` or `false` |
+| NotifyScript | The Notification Library used. | `okokNotify` `mythic_notify` `pNotify` `ox_lib` |
+| WarningMessage | A warning to be showed before a user is kicked | `string` |
+| AFK_Kick_Message | Message to be displayed when a player is kicked | `string` |
+| adminAce | The ace permission for the AFK Kicker to not kick | `string` |
