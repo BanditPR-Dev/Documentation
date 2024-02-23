@@ -1,0 +1,45 @@
+# Configuration Documentation
+
+This document describes the configuration parameters in the `config.json` file.
+
+## siteInformation
+
+- **processPort**: The port on which the server process runs.
+- **domain**: The base URL of the site.
+- **ownerId**: The unique identifier of the site owner.
+- **APIKey**: The API key for the site.
+
+## tokens
+
+- **discordBotToken**: The token for the Discord bot.
+- **oAuth2ClientId**: The OAuth2 client ID.
+- **oAuth2ClientToken**: The token for the OAuth2 client.
+
+## SQLInformation
+
+- **host**: The host IP address for the SQL server.
+- **username**: The username for connecting to the SQL server.
+- **password**: The password for connecting to the SQL server.
+- **database**: The name of the database.
+
+```json
+// Sample config.json
+{
+  "siteInformation": {
+    "processPort": 3000,
+    "domain": "http://localhost:3000",
+    "ownerId": "",
+    "APIKey": "",
+  },
+  "tokens": {
+    "discordBotToken": "",
+    "oAuth2ClientId": "",
+    "oAuth2ClientToken": ""
+  },
+  "SQLInformation": {
+    "host": "localhost",
+    "username": "root",
+    "password": "",
+    "database": "licenseSystem"
+  }
+}

@@ -1,0 +1,20 @@
+# SQL Database Installation Guide
+
+This guide provides instructions for installing and importing a database schema using `installme.sql`.
+
+## Prerequisites
+
+- A server with MySQL installed.
+
+### Import SQL DB
+
+To import your SQL Database use the following commands while in the directory for your licenseSystem
+```bash
+sudo mysql -u root -p
+
+source installme.sql
+
+show databases;
+```
+
+Upon running `show databases` you should see `licenseSystem` in there if so good job! You've just installed your SQL database
